@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="js no-touch csstransitions">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+
+        <title>EIP LLC</title>
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all">
+
+        <link rel="stylesheet" type="text/css" href="../css/styles.css" media="all">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400|Lato:900" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="eip-container loaded" id="ip-container">
+        <div class="eip-header">
+            <div class="eip-loader">
+                <svg class="eip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                    <path class="eip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"></path>
+                    <path id="ip-loader-circle" class="eip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"
+                        style="stroke-dashoffset: 0; stroke-dasharray: 192.617;"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="menu-wrapper">
+            <div class="container">
+                <header>
+                    <div class="logo">
+                        <h1><a href="/">
+                            <!--<img src="images/logo.png" alt="">--><span class="theme-color">EIP</span> LLC
+                        </a></h1>
+                    </div>
+                    <div class="mobile-menu">
+                        <span class="line"></span>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Products</a><ul>
+                              <li><a href="http://agaveha.com">Agave ISY Controller</a></li>
+                              <li><a href="https://play.google.com/store/apps/details?id=com.linuxjet.apps.ChromeUA">User Agent for Google Chrome</a></li>
+                              <li><a href="https://play.google.com/store/apps/details?id=com.linuxjet.games.flypaper">Fly Paper</a></li>
+                              <li><a href="https://play.google.com/store/apps/details?id=com.linuxjet.apps.crashpad.crash">Easy Draw</a></li>
+                              <li><a href="https://play.google.com/store/apps/details?id=com.linuxjet.games.snake2">Snake Game</a></li>
+                            </ul></li>
+                            <li><span>About</span></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+    <!-- /preloader -->
+
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h2>About</h2>
+              </div>
+            </div>
+        </div>
+    </div><!--/page-title-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          About ...
+        </div>
+      </div>
+    </div>
+    <footer class="small-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        EIP LLC
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+			<!--Android and Google Chrome are trademarks of Google Inc.-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready( function() {
+        $('.mobile-menu').click( function() {
+          if( $('.menu-wrapper nav ul').css('display') == 'none') {
+            $('.menu-wrapper nav ul').css('display','block');
+            $('.mobile-menu').addClass('open');
+          } else {
+            $('.menu-wrapper nav ul').css('display','none');
+            $('.mobile-menu').removeClass('open');
+          }
+        });
+      });
+    </script>
+</body>
+</html>

@@ -178,6 +178,9 @@ h6 {
     position: absolute;
     background-color: #3b3b3b
 }
+.menu-wrapper header nav ul {
+    padding: 0;
+}
 .menu-wrapper header nav ul li a {
     -webkit-transition: .2s all;
     -o-transition: .2s all;
@@ -259,7 +262,8 @@ h6 {
 .menu-wrapper header nav ul li:first-child {
     margin-left: 0
 }
-.menu-wrapper header nav ul li a {
+.menu-wrapper header nav ul li a,
+.menu-wrapper header nav ul li span {
     color: #848484;
     font-size: 15px;
     text-transform: uppercase;
@@ -268,7 +272,8 @@ h6 {
     text-decoration: none;
     padding-bottom: 2px
 }
-.menu-wrapper header nav>ul>li>a {
+.menu-wrapper header nav>ul>li>a,
+.menu-wrapper header nav ul li span {
     border-bottom: 2px solid #848484
 }
 .menu-wrapper header nav ul li ul {
@@ -393,9 +398,14 @@ h6 {
 
 .menu-wrapper header nav ul li a:active,
 .menu-wrapper header nav ul li a:focus,
-.menu-wrapper header nav ul li a:hover {
+.menu-wrapper header nav ul li a:hover,
+.menu-wrapper header nav ul li span {
     color: #0adcd5;
     border-color: #0adcd5;
+}
+.menu-wrapper header nav>ul>li>a:active,
+.menu-wrapper header nav>ul>li>a:focus,
+.menu-wrapper header nav>ul>li>a:hover {
     border-bottom-style: dotted;
 }
 .menu-wrapper header nav ul li.active>a,
